@@ -6,7 +6,7 @@ import Cart from './Cart';
 const Header = () => {
     return(
         <Grid container direction="row" justify="space-between" alignItems="center" xs={12}>
-            <Logo href="/">G STORE</Logo>
+            <Logo href="/">QUEERSTORE</Logo>
             <Cart />   
         </Grid>
     )

@@ -6,6 +6,7 @@ export const Logo = styled.a`
   align-self: center;
   text-decoration: none;
   color: #0dcaf0;
+  margin: 10px;
 
   &:hover {
     cursor: pointer;
