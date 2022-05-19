@@ -10,7 +10,7 @@ export const Logo = styled.a`
 
   &:hover {
     cursor: pointer;
-    color: #0072bb;
+    color: #E541AD;
     transition: 0.5s;
   }
 
@@ -26,11 +26,11 @@ export const Button = styled.button`
   border: 2px solid #0dcaf0;
   color: #0dcaf0;
   margin: 0 1em;
-  padding: 0.25em 1em;
+  padding: 0.40em 1em;
 
   &:hover {
-    color: #0072bb;
-    border: 2px solid #0072bb;
+    color: #E541AD;
+    border: 2px solid #E541AD;
     transition: 0.5s;
   }
 
