@@ -1,13 +1,16 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import { blue } from "@mui/material/colors";
 import { Paper, Grid, Typography, List, makeStyles } from '@material-ui/core/';
 import Item from '../components/Item';
 import Card from '../components/Card';
 
 const useStyles = makeStyles((theme) => ({
     root: {
+      background: `linear-gradient(to right, ${blue[200]}, ${blue[200]})`,
       flexGrow: 1,
       marginTop: '5px',
+      marginBottom: '10px'
     },
     paper: {
       padding: theme.spacing(2),
