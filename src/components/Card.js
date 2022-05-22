@@ -1,8 +1,9 @@
 import React from 'react';
-import { Paper, Grid, Typography, makeStyles} from '@material-ui/core/';
+import { Paper, Typography, makeStyles} from '@material-ui/core/';
 import { useSelector, useDispatch } from 'react-redux';
 import { Button } from './styles.js';
 import cartActions from './store/actions/cart';
+import  Grid  from '@mui/material/Grid';
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -17,7 +18,12 @@ const Card = ({ product, children }) => {
     const classes = useStyles();
 
     return(
-        <Grid item xs={3}>
+        <Grid item 
+                xs={12} 
+                sm={6}
+                md={4}
+                lg={3}
+        >
             <Paper className={classes.paper}>
                 <Grid container direction='column'
                 >
