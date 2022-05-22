@@ -7,7 +7,7 @@ import Card from '../components/Card';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-      background: `linear-gradient(to right, ${blue[200]}, ${blue[200]})`,
+      background: `linear-gradient(to bottom, ${blue[300]}, ${blue[200]})`,
       flexGrow: 1,
       marginTop: '5px',
       marginBottom: '10px'
@@ -51,7 +51,7 @@ const HomePage = () => {
         <Grid container spacing={3} className={classes.root}>
             <Grid item xs={3}>
                 <Paper className={classes.paper}>
-                    <Typography variant='h5'>
+                    <Typography variant='h5' color="primary">
                         Categorias
                     </Typography>
                     <List>

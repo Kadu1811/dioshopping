@@ -1,11 +1,10 @@
 import styled, { css } from "styled-components";
 
 export const Logo = styled.a`
-  color: black;
   font-size: 3rem;
   align-self: center;
   text-decoration: none;
-  color: #0dcaf0;
+  color: #64b5f6;
   margin: 10px;
 
   &:hover {
