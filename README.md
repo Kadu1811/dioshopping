@@ -9,7 +9,7 @@
 <div>
 
 ### 😊 Objetivo
-<p align="left">Criar um site e-commmerce com temática LGBT com carrinho de compras feito em React e JavaScript com mentoria da Nathally Souza na plataforma da DIO.
+<p align="left">Desenvolver um e-commerce usando React com Redux, além de explorar duas das principais soluções de estilo, o Material UI e o Bootstrap.
 </p>
 
 ### Funcionalidades
