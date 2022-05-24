@@ -16,7 +16,7 @@ const App = () => {
   return(
     <Provider store={store}>
       <Container maxWidth="xl">
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <Header />
           <Routes />
         </Router>

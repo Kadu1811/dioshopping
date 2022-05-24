@@ -4,6 +4,7 @@ import { blue } from "@mui/material/colors";
 import { Paper, Grid, Typography, List, makeStyles } from '@material-ui/core/';
 import Item from '../components/Item';
 import Card from '../components/Card';
+import { Categorias } from '../components/styles';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -50,24 +51,26 @@ const HomePage = () => {
     return(
         <Grid container spacing={3} className={classes.root}>
             <Grid item xs={3}>
-                <Paper className={classes.paper}>
-                    <Typography variant='h5' color="primary">
-                        Categorias
-                    </Typography>
-                    <List>
-                        {category.map(
-                            category => {
-                                return (
-                                    <Item
-                                        key = {category.id} 
-                                        name= {category.name}
-                                        details={count[category.name]}
-                                    />
-                                )
-                            }
-                        )}
-                    </List>
-                </Paper>
+                <Categorias>
+                    <Paper className={classes.paper}>
+                        <Typography variant='h5' color="primary">
+                            Categorias
+                        </Typography>
+                        <List>
+                            {category.map(
+                                category => {
+                                    return (
+                                        <Item
+                                            key = {category.id} 
+                                            name= {category.name}
+                                            details={count[category.name]}
+                                        />
+                                    )
+                                }
+                            )}
+                        </List>
+                    </Paper>
+                </Categorias>
             </Grid>
             <Grid container xs={9} spacing={3} className={classes.root}>
                 {products.map(item => {
